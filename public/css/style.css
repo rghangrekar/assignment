@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.appointmentList {
+  inline: display-block;
+  line-height: 50px;
+  border-width: 0 0 3px 0;
+  border-style: solid;
+}
+
+
+.assigned {
+  background-color: red
+}
+
+span.required {
+  color: red;
+}

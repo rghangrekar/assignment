@@ -1,0 +1,11 @@
+<div class="row appointmentList" ng-class="{'assigned': slot.isAssigned}" ng-repeat="slot in vm.timeSlots track by slot.slotId" ng-click="vm.editSlot(slot)">
+  <div class="col-sm-4" class="slotTime">
+    <span>{{slot.timeSlot}}</span>
+    <span>{{slot.status}}</span>
+  </div>
+  <div class="col-sm-4" class="slotCustomer" ng-if="slot.customer">
+    <span>{{slot.customer.name}}</span>
+    <span ng-if="slot.customer.phoneNumber">({{slot.customer.phoneNumber}})</span>
+  </div>
+</div>
+

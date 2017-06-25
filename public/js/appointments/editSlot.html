@@ -1,0 +1,18 @@
+<div id="editModalSlot">
+  <div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Edit Time Slot</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <ng-form name="slotAssignForm">
+      <div class="row">
+        <div class="col-sm-6">Name <span class="required">*</span>: <input ng-model="vm.slot.customer.name" ng-required="true"></div>
+        <div class="col-sm-6">Phone Number <span class="required">*</span>: <input ng-model="vm.slot.customer.phoneNumber" ng-required="true"></div>
+      </div>
+    </ng-form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="vm.okHandler()" ng-disabled="slotAssignForm.$invalid">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="vm.cancelHandler()">Cancel</button>
+    <button class="btn btn-warning" type="button" ng-click="vm.removeAssigned()" ng-if="vm.slot.isAssigned">Clear Assignment</button>
+  </div>
+</div>
